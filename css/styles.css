@@ -22,29 +22,48 @@ img {
 }
 
 .home {
-    background-color: aliceblue;
+    background-color: rgb(130, 176, 216);
     padding: 100px;
-    width: 930px;
+    width: 500px;
     margin: 0 auto;
     text-align: center;
 } 
 
-body{
-    background-color: #aa1969;
-}
 
 ul{
     position: fixed;
 }
 
+li{
+    margin: 25px
+}
+
 a{
-    background-color: lightskyblue;
+    background-color: rgb(252, 196, 242);
     font-size: 14px;
     font-weight: bold;
     text-decoration: none;
     color: #4d1b38;
     padding: 8px 15px;
-    margin-top: 20px;
     border-radius: 20px;
     text-align: center
+}
+
+.historia{
+    background-color: aliceblue;
+    padding: 100px;
+    width: 930px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.historia > p{
+    font-style: italic;
+    font-size: 30px;
+    padding: 20px;
+    color: #aa1969;
+}
+
+span{
+    color: rgb(204, 149, 187);
 }
