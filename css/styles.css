@@ -3,3 +3,48 @@ img {
     margin: auto;
     display: block;
 }
+
+.home > h1 {
+    font-family: 20px;
+    color: rgb(155, 37, 76);
+    text-align: center;
+    padding: 4px;
+}
+
+.home > p {
+    font-style: italic;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.home > span{
+    font-weight: bold;
+}
+
+.home {
+    background-color: aliceblue;
+    padding: 100px;
+    width: 930px;
+    margin: 0 auto;
+    text-align: center;
+} 
+
+body{
+    background-color: #aa1969;
+}
+
+ul{
+    position: fixed;
+}
+
+a{
+    background-color: lightskyblue;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #4d1b38;
+    padding: 8px 15px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center
+}
