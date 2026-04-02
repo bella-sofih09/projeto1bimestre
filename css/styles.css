@@ -1,4 +1,3 @@
-/* ===== IMPORTS & RESET ===== */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,300&display=swap');
 
 *, *::before, *::after {
@@ -7,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* ===== VARIÁVEIS ===== */
 :root {
     --rosa-escuro: #8b1a4a;
     --rosa-medio: #c2346a;
@@ -32,7 +30,6 @@ body {
     min-height: 100vh;
 }
 
-/* ===== NAV ===== */
 header {
     position: fixed;
     top: 0;
@@ -82,7 +79,6 @@ nav a:hover {
     color: #fff;
 }
 
-/* ===== HOME / HERO ===== */
 .home {
     width: 100%;
     max-width: 100%;
@@ -90,18 +86,17 @@ nav a:hover {
     padding: 0;
 }
 
-/* DEPOIS */
 .hero-section {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: stretch;
     padding-top: var(--nav-height);
-    gap: 0;                  /* garante zero espaço entre texto e imagem */
+    gap: 0;
 }
 
 .hero-text {
-    padding: 80px 30px 80px 40px;   /* reduz o padding direito pra chegar mais perto */
+    padding: 80px 30px 80px 40px;
     background: var(--rosa-palido);
     display: flex;
     flex-direction: column;
@@ -194,7 +189,6 @@ nav a:hover {
     padding: 8px 16px;
 }
 
-/* ===== HISTÓRIA PAGE ===== */
 .historia-page {
     padding-top: var(--nav-height);
     min-height: 100vh;
@@ -287,7 +281,6 @@ nav a:hover {
     color: var(--texto-medio);
 }
 
-/* ===== FOTOS PAGE ===== */
 .fotos-page {
     padding-top: var(--nav-height);
     min-height: 100vh;
@@ -347,7 +340,6 @@ nav a:hover {
     box-shadow: var(--shadow-hover);
 }
 
-/* DEPOIS */
 .foto-img-wrap {
     overflow: hidden;
     height: 380px;
@@ -356,14 +348,15 @@ nav a:hover {
 .foto-img-wrap img {
     width: 100%;
     height: 100%;
-    object-fit: contain;       /* mostra a imagem inteira sem cortar */
+    object-fit: contain;
     object-position: center center;
     display: block;
     margin: 0;
-    background: #f5e8ef;       /* fundo rosé nas bordas laterais */
+    background: #f5e8ef;
     filter: grayscale(12%) contrast(1.03);
     transition: filter 0.45s, transform 0.45s;
 }
+
 .foto-card:hover .foto-img-wrap img {
     filter: grayscale(0%) contrast(1.05);
     transform: scale(1.05);
@@ -389,7 +382,6 @@ nav a:hover {
     line-height: 1.5;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 800px) {
     .hero-section {
         grid-template-columns: 1fr;
