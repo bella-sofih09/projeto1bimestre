@@ -59,5 +59,6 @@ nav a {
 .card {
     padding: 50px;
     font-size: medium;
+    flex-wrap: wrap-reverse;
 
 }
