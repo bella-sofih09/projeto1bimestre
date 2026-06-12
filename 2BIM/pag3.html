@@ -1,20 +1,78 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Como estão hoje</title>
+    <title>Mamonas Assassinas | Fã-Clube</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
+
     <header>
-            <nav>
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pag2.html">Mais famosos</a></li>
-                    <li><a href="./pag3.html">Como estão hoje</a></li>
-                </ul>
-            </nav>
-        </header>    
+        <h1>Mamonas Assassinas</h1>
+        <p>A banda que parou o Brasil</p>
+    </header>
+
+    <nav>
+        <a href="index.html">A Banda</a>
+        <a href="pag2.html">Discografia</a>
+        <a href="pag3.html">Fã-Clube</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Junte-se à Família Mamônica</h2>
+            <p>Se você sabe cantar "Pelados em Santos" de trás para frente, esse é o seu lugar. Preencha a ficha de cadastro para receber conteúdo exclusivo da Brasília Amarela diretamente no seu e-mail.</p>
+            
+            <form action="pagExtra.html" method="get">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required>
+
+                    <label for="email" style="margin-top: 15px; display: block;">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@brasilia.com" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Pesquisa de Fã</legend>
+
+                    <label for="regiao">De qual região você é?</label>
+                    <select id="regiao" name="regiao" required>
+                        <option value="" disabled selected>Selecione uma opção...</option>
+                        <option value="sp">São Paulo (Guarulhos e cia)</option>
+                        <option value="sudeste">Outro estado do Sudeste</option>
+                        <option value="sul">Sul</option>
+                        <option value="nordeste">Nordeste</option>
+                        <option value="norte_co">Norte / Centro-Oeste</option>
+                    </select>
+
+                    <label style="margin-top: 15px; display: block;">Quem era o seu integrante favorito?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="membro" value="dinho" required> Dinho</label>
+                        <label><input type="radio" name="membro" value="bento"> Bento</label>
+                        <label><input type="radio" name="membro" value="julio"> Júlio</label>
+                        <label><input type="radio" name="membro" value="samuel"> Samuel</label>
+                        <label><input type="radio" name="membro" value="sergio"> Sérgio</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <label for="mensagem">Deixe uma mensagem ou trecho de música:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva aqui..." required></textarea>
+                </fieldset>
+
+                <input type="submit" value="Enviar Cadastro Musical">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Arquivo do Rock Nacional. Atenção: Creuzebek!</p>
+    </footer>
+
 </body>
+</html>
