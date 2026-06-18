@@ -1,7 +1,5 @@
-/* Importação de Fontes Premium */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700;900&family=Permanent+Marker&display=swap');
 
-/* Paleta de Cores e Variáveis */
 :root {
     --bg-dark: #0f0f0f;
     --bg-card: #1c1c1c;
@@ -13,7 +11,6 @@
     --transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-/* Reset Global */
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +28,6 @@ body {
     background-image: radial-gradient(circle at 50% 0%, #2a2a2a 0%, #0f0f0f 70%);
 }
 
-/* Animação de Entrada */
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -43,7 +39,6 @@ body {
     }
 }
 
-/* Header Estilo "Hero" */
 header {
     background: linear-gradient(135deg, var(--primary-red) 0%, #900000 100%);
     color: var(--primary-yellow);
@@ -72,7 +67,6 @@ header p {
     animation: fadeUp 1.2s ease-out;
 }
 
-/* Navegação com Glassmorphism (Uso de Flexbox) */
 nav {
     display: flex;
     justify-content: center;
@@ -107,7 +101,6 @@ nav a:hover {
     transform: translateY(-3px);
 }
 
-/* Área Principal (Flexbox) */
 main {
     display: flex;
     flex-direction: column;
@@ -117,7 +110,6 @@ main {
     gap: 40px;
 }
 
-/* Cartões de Conteúdo */
 section {
     background-color: var(--bg-card);
     padding: 40px;
@@ -127,10 +119,9 @@ section {
     max-width: 900px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     animation: fadeUp 0.8s ease-out forwards;
-    opacity: 0; /* Para a animação funcionar */
+    opacity: 0; 
 }
 
-/* Delays para as sections entrarem uma por uma */
 section:nth-child(1) { animation-delay: 0.2s; }
 section:nth-child(2) { animation-delay: 0.4s; }
 
@@ -149,7 +140,6 @@ section p {
     color: #ccc;
 }
 
-/* Estilização da Citação (Blockquote) */
 blockquote {
     background: rgba(255, 215, 0, 0.1);
     border-left: 4px solid var(--primary-yellow);
@@ -160,7 +150,6 @@ blockquote {
     border-radius: 0 8px 8px 0;
 }
 
-/* Imagens */
 img {
     width: 100%;
     height: auto;
@@ -176,7 +165,6 @@ img:hover {
     transform: scale(1.02);
 }
 
-/* Tabela Avançada */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -206,7 +194,6 @@ tr:hover td {
     transition: var(--transition);
 }
 
-/* Formulário Elaborado */
 form {
     display: flex;
     flex-direction: column;
@@ -293,7 +280,6 @@ input[type="submit"]:hover {
     box-shadow: 0 10px 20px rgba(230, 57, 70, 0.4);
 }
 
-/* Rodapé */
 footer {
     background-color: #050505;
     color: var(--text-muted);
@@ -303,7 +289,6 @@ footer {
     font-size: 0.95rem;
 }
 
-/* Media Query (Responsividade Obrigatória) */
 @media (max-width: 768px) {
     header h1 {
         font-size: 2.5rem;
